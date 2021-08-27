@@ -29,6 +29,7 @@ test:
 
   requires:
     - psutil
+    - pytest-runner
     - pytest
     - pytest-aiohttp
     - pytest-cov
