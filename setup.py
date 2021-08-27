@@ -39,7 +39,7 @@ setuptools.setup(
     extras_require={"dev": ["aiohttp-devtools"] + tests_require},
     entry_points={
         "jupyter_serverproxy_servers": ["matlab = jupyter_matlab_proxy:setup_matlab"],
-        "console_scripts": ["matlab-jupyter-app = jupyter_matlab_proxy.app:main"],
+        "console_scripts": ["get_hello = dummy_basic.get:get_hello"],
     },
     include_package_data=True,
     zip_safe=False,
