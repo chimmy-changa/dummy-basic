@@ -1,4 +1,4 @@
-name: MATLAB Jupyter Integration
+name: Run Tests
 
 on:
   push:
