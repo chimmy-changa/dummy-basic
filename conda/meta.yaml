@@ -1,17 +1,17 @@
 package:
   name: dummy-basic
-  version: "0.1.4"
+  version: "0.1.6"
 
 source:
   git_url: https://github.com/chimmy-changa/dummy-basic.git #
-  git_rev: "v0.1.4"
+  git_rev: "v0.1.6"
 
 build:
   number: 0
-  # noarch: python
+  noarch: python
   skip: true # [not linux]
   entry_points:
-    - get_hello = dummy_basic.get:get_hello
+    - get_hello = dummy_basic.get:print_hello
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -31,6 +31,7 @@ test:
   requires:
     - psutil
     - pytest
+    - pytest-runner
     - pytest-aiohttp
     - pytest-cov
     - pytest-env

@@ -21,7 +21,7 @@ long_description = (HERE / "README.md").read_text()
 
 setuptools.setup(
     name="dummy-basic",
-    version="0.1.6",
+    version="0.1.7",
     url="https://github.com/chimmy-change/dummy-basic",
     author="Chimmy",
     author_email="chimmy-changa@gmail.com",
