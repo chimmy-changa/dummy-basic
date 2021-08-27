@@ -34,7 +34,8 @@ setuptools.setup(
     classifiers=["Framework :: Jupyter"],
     python_requires="~=3.7",
     install_requires=["jupyter-server-proxy", "aiohttp>=3.7.4"],
-    setup_requires=["pytest-runner"],
+    # setup_requires=["pytest-runner"],
+    setup_requires=[],
     tests_require=tests_require,
     extras_require={"dev": ["aiohttp-devtools"] + tests_require},
     entry_points={
