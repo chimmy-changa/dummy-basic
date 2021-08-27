@@ -1,1 +1,2 @@
-$PYTHON -m pytest
+
+pytest

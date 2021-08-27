@@ -3,6 +3,10 @@ def get_hello():
     return "hello"
 
 
+def print_hello():
+    print("hello")
+
+
 def get_hello_world():
     print("hello world")
     return "hello_world"

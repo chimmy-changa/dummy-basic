@@ -8,6 +8,7 @@ source:
 
 build:
   number: 0
+  # noarch: python
   skip: true # [not linux]
   entry_points:
     - get_hello = dummy_basic.get:get_hello
@@ -29,7 +30,6 @@ test:
 
   requires:
     - psutil
-    - pytest-runner
     - pytest
     - pytest-aiohttp
     - pytest-cov
@@ -37,8 +37,9 @@ test:
     - pytest-mock
     - requests
 
-  imports:
-    - dummy_basic
+  # imports:
+  #   - dummy_basic
+  #   - dummy_basic.get_hello
 
 about:
   home: "https://github.com/chimmy-change/dummy-basic"
