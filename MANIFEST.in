@@ -1,2 +1,2 @@
 include README.md
-recursive-include dummy_gg *
+recursive-include dummy_basic *

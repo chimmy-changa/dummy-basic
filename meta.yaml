@@ -11,7 +11,7 @@ build:
   noarch: python
   skip: true # [not linux]
   entry_points:
-    - get_hello = dummy_basic.get:print_hello
+    - print_hello = dummy_basic.get:print_hello
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -24,23 +24,22 @@ requirements:
     - jupyter-server-proxy
     - python >=3.7
 
-test:
-  commands:
-    - get_hello --help
+  # test:
+  #   commands:
+  #     - get_hello --help
 
-  requires:
-    - psutil
-    - pytest
-    - pytest-runner
-    - pytest-aiohttp
-    - pytest-cov
-    - pytest-env
-    - pytest-mock
-    - requests
+  #   requires:
+  #     - psutil
+  #     # - pytest
+  #     # - pytest-aiohttp
+  #     # - pytest-cov
+  #     # - pytest-env
+  #     # - pytest-mock
+  #     - requests
 
-  # imports:
-  #   - dummy_basic
-  #   - dummy_basic.get_hello
+  imports:
+    - dummy_basic
+    - dummy_basic.print_hello
 
 about:
   home: "https://github.com/chimmy-change/dummy-basic"
